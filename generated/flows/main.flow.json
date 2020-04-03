@@ -1,0 +1,57 @@
+{
+  "version": "0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "event.nlu.intent.is('forget')",
+        "node": "forget-my-name"
+      }
+    ]
+  },
+  "startNode": "init",
+  "nodes": [
+    {
+      "id": "a54a82eb7c",
+      "name": "init",
+      "onEnter": [
+        "say #!builtin_text-a0b~RQ",
+        "say #!builtin_text-XUIwCv",
+        "say #!builtin_text-bNGJO~"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "first_symptom"
+        }
+      ]
+    },
+    {
+      "id": "skill-9da72a",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "first_symptom",
+      "flow": "skills/choice-9da72a.flow.json",
+      "next": [
+        {
+          "caption": "User picked [0]",
+          "condition": "state['skill-choice-ret'] == \"0\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [1]",
+          "condition": "state['skill-choice-ret'] == \"1\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "builtin_single-choice-8b7nsO",
+    "formData": {
+      "text": "Como você está se sentindo hoje?",
+      "choices": [
+        {
+          "title": "Estou me sentindo bem!",
+          "value": "0"
+        },
+        {
+          "title": "Estou me sentindo mal!",
+          "value": "1"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-04-03T20:06:12.852Z"
+  },
+  {
+    "id": "builtin_single-choice-TEC3JA",
+    "formData": {
+      "text": "Hoje ou nos últimos 7 dias, você ou a pessoa para quem está consultando apresentou FEBRE?",
+      "choices": [
+        {
+          "title": "Sim",
+          "value": "1"
+        },
+        {
+          "title": "Não",
+          "value": "0"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-04-03T20:09:54.023Z"
+  }
+]
