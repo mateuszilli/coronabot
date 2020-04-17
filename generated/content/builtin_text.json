@@ -1,97 +1,8 @@
 [
   {
-    "id": "builtin_text-pSsHWg",
-    "formData": {
-      "text": "👋, {{state.$r}}!",
-      "variations": [
-        "Hello, {{state.$r}}!",
-        "Welcome to Botpress, {{state.$r}}!"
-      ],
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-05-14T00:57:36.026Z"
-  },
-  {
-    "id": "builtin_text-AY5SSW",
-    "formData": {
-      "text": "This is the first time we speak 🤖",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-05-14T00:59:51.118Z"
-  },
-  {
-    "id": "builtin_text-bFsOmf",
-    "formData": {
-      "text": "We already spoke {{state.$r}} times!",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-05-14T01:00:37.593Z"
-  },
-  {
-    "id": "builtin_text-TtzrCV",
-    "formData": {
-      "text": "Alright, I have forgotten your name.",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-05-14T01:06:41.963Z"
-  },
-  {
-    "id": "builtin_text-z0J9qh",
-    "formData": {
-      "text": "May I know your name please?",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-05-14T01:08:41.241Z"
-  },
-  {
-    "id": "builtin_text-X069Le",
-    "formData": {
-      "text": "Try saying something like \"forget my name\"!",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-05-14T01:16:53.227Z"
-  },
-  {
-    "id": "builtin_text-kKQ8C3",
-    "formData": {
-      "text": "(To see how this works, double-click anywhere on the flow and go to the \"Transitions\" panel)",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2018-05-14T01:17:55.317Z"
-  },
-  {
-    "id": "builtin_text-c~NgPU",
-    "formData": {
-      "text": "Olá, essa é a plataforma de pré-atendimento e pré-diagnostico do coronavírus.\n\nAntes de mais nada, como você está se sentindo hoje?",
-      "variations": [
-        "Estou me sentindo bem!",
-        "Estou me sentindo mal!"
-      ],
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2020-04-03T19:47:57.608Z"
-  },
-  {
-    "id": "builtin_text-a0b~RQ",
-    "formData": {
-      "text": "Olá.",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2020-04-03T19:52:13.894Z"
-  },
-  {
     "id": "builtin_text-XUIwCv",
     "formData": {
-      "text": "Este canal foi criado para verificar os sintomas e realizar um pré-diagnóstico do novo coronavírus (COVID-19).",
+      "text": "Olá. Este canal foi criado para verificar os sintomas e tirar suas dúvidas sobre o novo coronavírus (COVID-19).",
       "variations": [],
       "typing": true
     },
@@ -99,21 +10,103 @@
     "createdOn": "2020-04-03T19:54:50.247Z"
   },
   {
-    "id": "builtin_text-b0G4Od",
-    "formData": {
-      "text": "Como você está se sentindo hoje?",
-      "typing": true
-    },
-    "createdBy": "admin",
-    "createdOn": "2020-04-03T19:57:49.994Z"
-  },
-  {
     "id": "builtin_text-bNGJO~",
     "formData": {
-      "text": "Lembrando que esta é uma ferramenta de auxílio. Ela busca a melhor orientação para você tirar suas dúvidas, mas frisamos que ela NÃO É uma ferramenta de diagnóstico.",
+      "text": "Lembrando que essa é uma ferramenta de auxílio. Ela busca a melhor orientação para você tirar suas dúvidas, mas frisamos que ela NÃO É uma ferramenta de diagnóstico.",
       "typing": true
     },
     "createdBy": "admin",
     "createdOn": "2020-04-03T20:13:05.455Z"
+  },
+  {
+    "id": "builtin_text-kKqh0r",
+    "formData": {
+      "text": "E alguns dos sintomas abaixo?\n\n* Tosse\n* Dor de garganta\n* Dificuldade respiratória",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-04-16T23:56:10.022Z"
+  },
+  {
+    "id": "builtin_text-FRIwv7",
+    "formData": {
+      "text": "E algum destes outros sintomas?\n\n* Dificuldade para respirar e/ou falta de ar quando está em repouso ou ao fazer pequenos esforços?\n* Sensação de cansaço muito forte?\n* Sensação de desmaio?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-04-17T00:05:52.338Z"
+  },
+  {
+    "id": "builtin_text-AY0ves",
+    "formData": {
+      "text": "Pelas informações que você nos deu, os sintomas indicam que você pode estar infectado pelo novo coronavirus, mas sem sintomas graves que necessitam de atendimento médico.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-04-17T00:09:04.774Z"
+  },
+  {
+    "id": "builtin_text-eVO3PJ",
+    "formData": {
+      "text": "E o melhor a se fazer neste caso é praticar o ISOLAMENTO DOMICILIAR por 14 dias. Caso os sintomas informados se agravem, procure ajuda médica.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-04-17T00:14:08.649Z"
+  },
+  {
+    "id": "builtin_text-QMcqc6",
+    "formData": {
+      "text": "Você ou a pessoa para quem está consultando se encaixa em uma ou mais das condições de saúde abaixo?\n\n* Doenças cardíacas: hipertensão arterial (pressão alta), coronariopatias (doença dos vasos do coração), valvulopatias (doença de válvulas do coração), IAM prévio (infarto anterior)?\n* Doenças respiratórias: asma e outras pneumopatias (doenças do pulmão)? Ou está com tuberculose ativa?\n* Doenças neurológicas: disfunção congênita, lesões medulares, epilepsia, paralisia cerebral, síndrome de Down, derrame (AVC/AVE) ou doenças neuromusculares?\n* Diabetes\n* Câncer\n* Doenças do fígado\n* Doença dos rins\n* Problemas de saúde que causam imunidade baixa (HIV, transplantes e outros).",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-04-17T00:18:12.410Z"
+  },
+  {
+    "id": "builtin_text-97eEt2",
+    "formData": {
+      "text": "Você ou a pessoa para quem está consultando tem mais de 50 anos de idade?",
+      "variations": [],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-04-17T00:19:45.884Z"
+  },
+  {
+    "id": "builtin_text-wiy2nS",
+    "formData": {
+      "text": "Hoje ou nos últimos 7 dias, você ou a pessoa para quem está consultando apresentou FEBRE?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-04-17T00:32:05.446Z"
+  },
+  {
+    "id": "builtin_text-2g4fFc",
+    "formData": {
+      "text": "Pelas informações que você nos deu, você está bem. Mas caso você tenha condições, indicamos que fique em ISOLAMENTO DOMICILIAR até a situação se normalizar.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-04-17T01:20:30.344Z"
+  },
+  {
+    "id": "builtin_text-jbOofT",
+    "formData": {
+      "text": "Pelas informações que você nos deu, os sintomas indicam que provavelmente você está infectado pelo novo coronavirus e tem alguns sintomas em estágios mais acentuados. Nessa situação, indicamos que você procure ajuda médica imediatamente. Use mascara e mantenha uma distancia de 2 metros de outras pessoas.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-04-17T01:26:07.202Z"
+  },
+  {
+    "id": "builtin_text-yPVmYs",
+    "formData": {
+      "text": "Não conseguimos compreender sua resposta. Mas frisamos a importância do uso de mascara ao sair de casa, manter a distancia de 2 metros de outras pessoas, e a higienização correta das mãos com sabão ou álcool em gel 70%.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-04-17T20:40:54.455Z"
   }
 ]

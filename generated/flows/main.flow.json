@@ -2,12 +2,7 @@
   "version": "0.1",
   "catchAll": {
     "onReceive": [],
-    "next": [
-      {
-        "condition": "event.nlu.intent.is('forget')",
-        "node": "forget-my-name"
-      }
-    ]
+    "next": []
   },
   "startNode": "init",
   "nodes": [
@@ -15,42 +10,239 @@
       "id": "a54a82eb7c",
       "name": "init",
       "onEnter": [
-        "say #!builtin_text-a0b~RQ",
         "say #!builtin_text-XUIwCv",
-        "say #!builtin_text-bNGJO~"
+        "say #!builtin_text-bNGJO~",
+        "say #!builtin_text-wiy2nS"
       ],
       "onReceive": null,
       "next": [
         {
           "condition": "true",
-          "node": "first_symptom"
+          "node": "choice-1"
         }
       ]
     },
     {
-      "id": "skill-9da72a",
+      "id": "b89b6e00a3",
+      "name": "symptom_1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-2"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-kKqh0r"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "78c8ef95af",
+      "name": "symptom_2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-3"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-FRIwv7"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "993c7e08dc",
+      "name": "result-2",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-AY0ves",
+        "say #!builtin_text-eVO3PJ"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "2af8bd345f",
+      "name": "symptom_4",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-5"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-QMcqc6"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "d9b2498fa5",
+      "name": "symptom_3",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-4"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-97eEt2"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-63377a",
       "type": "skill-call",
       "skill": "choice",
-      "name": "first_symptom",
-      "flow": "skills/choice-9da72a.flow.json",
+      "name": "choice-1",
+      "flow": "skills/choice-63377a.flow.json",
       "next": [
         {
           "caption": "User picked [0]",
           "condition": "state['skill-choice-ret'] == \"0\"",
-          "node": ""
+          "node": "symptom_1"
         },
         {
           "caption": "User picked [1]",
           "condition": "state['skill-choice-ret'] == \"1\"",
-          "node": ""
+          "node": "symptom_1"
         },
         {
           "caption": "On failure",
           "condition": "true",
-          "node": ""
+          "node": "result-0"
         }
       ],
       "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-378755",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-2",
+      "flow": "skills/choice-378755.flow.json",
+      "next": [
+        {
+          "caption": "User picked [0]",
+          "condition": "state['skill-choice-ret'] == \"0\"",
+          "node": "result-1"
+        },
+        {
+          "caption": "User picked [1]",
+          "condition": "state['skill-choice-ret'] == \"1\"",
+          "node": "symptom_2"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "result-0"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-34fdca",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-3",
+      "flow": "skills/choice-34fdca.flow.json",
+      "next": [
+        {
+          "caption": "User picked [0]",
+          "condition": "state['skill-choice-ret'] == \"0\"",
+          "node": "result-2"
+        },
+        {
+          "caption": "User picked [1]",
+          "condition": "state['skill-choice-ret'] == \"1\"",
+          "node": "symptom_3"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "result-0"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-232dc9",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-5",
+      "flow": "skills/choice-232dc9.flow.json",
+      "next": [
+        {
+          "caption": "User picked [0]",
+          "condition": "state['skill-choice-ret'] == \"0\"",
+          "node": "result-3"
+        },
+        {
+          "caption": "User picked [1]",
+          "condition": "state['skill-choice-ret'] == \"1\"",
+          "node": "result-3"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "result-0"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-8fb71a",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-4",
+      "flow": "skills/choice-8fb71a.flow.json",
+      "next": [
+        {
+          "caption": "User picked [0]",
+          "condition": "state['skill-choice-ret'] == \"0\"",
+          "node": "symptom_4"
+        },
+        {
+          "caption": "User picked [1]",
+          "condition": "state['skill-choice-ret'] == \"1\"",
+          "node": "symptom_4"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "result-0"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "9793d3d4df",
+      "name": "result-1",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-2g4fFc"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "12f16a1e7b",
+      "name": "result-3",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-jbOofT"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "309deacd54",
+      "name": "result-0",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-yPVmYs"
+      ],
       "onReceive": null
     }
   ]

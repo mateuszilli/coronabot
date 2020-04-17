@@ -2,12 +2,14 @@
   "version": "0.1",
   "startNode": "entry",
   "skillData": {
-    "contentId": "builtin_single-choice-TEC3JA",
+    "contentId": "builtin_single-choice-hx~amg",
     "keywords": {
       "0": [
+        "0",
         "Não"
       ],
       "1": [
+        "1",
         "Sim"
       ]
     },
@@ -17,7 +19,7 @@
     {
       "name": "entry",
       "onEnter": [
-        "say #!builtin_single-choice-TEC3JA {\"skill\":\"choice\"}"
+        "say #!builtin_single-choice-hx~amg {\"skill\":\"choice\"}"
       ],
       "next": [
         {
@@ -25,13 +27,13 @@
           "node": "parse"
         }
       ],
-      "id": "373582",
+      "id": "785945",
       "onReceive": null
     },
     {
       "name": "parse",
       "onReceive": [
-        "__skill-choice-parse {\"contentId\":\"builtin_single-choice-TEC3JA\",\"keywords\":{\"0\":[\"Não\"],\"1\":[\"Sim\"]},\"config\":{}}"
+        "__skill-choice-parse {\"contentId\":\"builtin_single-choice-hx~amg\",\"keywords\":{\"0\":[\"0\",\"Não\"],\"1\":[\"1\",\"Sim\"]},\"config\":{}}"
       ],
       "next": [
         {
@@ -43,7 +45,7 @@
           "node": "invalid"
         }
       ],
-      "id": "250740",
+      "id": "374071",
       "onEnter": []
     },
     {
@@ -61,13 +63,13 @@
           "node": "#"
         }
       ],
-      "id": "334817",
+      "id": "852451",
       "onReceive": null
     },
     {
       "name": "sorry",
       "onEnter": [
-        "say #!builtin_single-choice-TEC3JA {\"skill\":\"choice\"}"
+        "say #!builtin_single-choice-hx~amg {\"skill\":\"choice\"}"
       ],
       "next": [
         {
@@ -75,7 +77,7 @@
           "node": "parse"
         }
       ],
-      "id": "458134",
+      "id": "253920",
       "onReceive": null
     }
   ]

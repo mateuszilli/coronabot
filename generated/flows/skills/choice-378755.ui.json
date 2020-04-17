@@ -1,0 +1,85 @@
+{
+  "nodes": [
+    {
+      "id": "753962",
+      "position": {}
+    },
+    {
+      "id": "823570",
+      "position": {}
+    },
+    {
+      "id": "993526",
+      "position": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "956208",
+      "position": {}
+    }
+  ],
+  "links": [
+    {
+      "source": "753962",
+      "sourcePort": "out0",
+      "target": "823570",
+      "points": [
+        {
+          "x": null,
+          "y": null
+        },
+        {
+          "x": null,
+          "y": null
+        }
+      ]
+    },
+    {
+      "source": "823570",
+      "sourcePort": "out1",
+      "target": "993526",
+      "points": [
+        {
+          "x": null,
+          "y": null
+        },
+        {
+          "x": null,
+          "y": null
+        }
+      ]
+    },
+    {
+      "source": "956208",
+      "sourcePort": "out0",
+      "target": "823570",
+      "points": [
+        {
+          "x": null,
+          "y": null
+        },
+        {
+          "x": null,
+          "y": null
+        }
+      ]
+    },
+    {
+      "source": "993526",
+      "sourcePort": "out0",
+      "target": "956208",
+      "points": [
+        {
+          "x": null,
+          "y": null
+        },
+        {
+          "x": null,
+          "y": null
+        }
+      ]
+    }
+  ]
+}
