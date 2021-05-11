@@ -15,7 +15,7 @@
     "@botpress/hitl": "10.51.10",
     "@botpress/channel-web": "10.51.10",
     "jsdoc-api": "^4.0.3",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "yn": "^2.0.0"
   },
   "scripts": {
